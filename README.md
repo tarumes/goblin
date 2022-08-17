@@ -13,12 +13,12 @@ func main {
 
 	err := GOBWrite("test.go", testData)
 	if err != nil {
-		t.Error(err)
+		log.Error(err)
 	}
 
 	err = GOBRead("test.go", &testData)
 	if err != nil {
-		t.Error(err)
+		log.Error(err)
 	}
 }
 ```
